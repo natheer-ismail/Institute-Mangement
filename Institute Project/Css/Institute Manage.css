@@ -1,0 +1,87 @@
+﻿body {
+    direction: rtl;
+    font-family: system-ui;
+    background-image:url("../Images/BackGround/workspace-1280538.jpg");
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    
+}
+#overlay{
+    background-color:rgba(0 , 0 , 0 ,0.3);
+    width:100%;
+    height:100vh;
+    z-index:-10;
+}
+a{
+ 
+    text-decoration:none;
+    color:black; 
+}
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+#content #Logo{
+    display:flex;
+    justify-content:center;
+    color:orange;
+
+}
+    #content #Logo i{
+        font-size:120px;
+        margin-right:60px;
+        
+
+    }
+    #content h1 {
+        margin-bottom: 100px;
+        font-size:60px;
+    }
+#container #content #main{
+    display:flex;
+    gap:40px;
+    margin-bottom:50px;
+}
+#box {
+    width: 400px;
+    height: 200px;
+    background-color: #E3E7E9;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
+    border-radius:10px;
+    transition:0.3s;
+    position:relative;
+}
+    #box:hover {
+        background: #B3AF4E;
+        transition: 0.3s;
+        transform: scale(1.1)
+    }
+    #box::after {
+        position: absolute;
+        content: '';
+        background-color: #A7574E;
+        width: 6px;
+        height: 100%;
+        left: 0;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 30px;
+    }
+   
+#box i{
+    font-size:40px;
+    margin-right:20px;
+}
+#Button1{
+background-color:red;
+border-color:none;
+}
+h1{
+   padding-top:-150px;
+}

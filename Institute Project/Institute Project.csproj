@@ -1,0 +1,303 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A4E3665E-9212-4315-A48F-E0CB85370BB2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Institute_Project</RootNamespace>
+    <AssemblyName>Institute Project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44336</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\Institute.mdf" />
+    <Content Include="App_Data\Institute_log.ldf">
+      <DependentUpon>Institute.mdf</DependentUpon>
+    </Content>
+    <Content Include="Css\Institute Manage.css" />
+    <Content Include="Css\Style.css" />
+    <Content Include="Css\User Login.css" />
+    <Content Include="Images\BackGround\ai-generated-8356763.jpg" />
+    <Content Include="Images\BackGround\boat-3062045.jpg" />
+    <Content Include="Images\BackGround\college-student-3500990.jpg" />
+    <Content Include="Images\BackGround\library-922998.jpg" />
+    <Content Include="Images\BackGround\light-465350.jpg" />
+    <Content Include="Images\BackGround\mountains-7549394.jpg" />
+    <Content Include="Images\BackGround\work-3938876.jpg" />
+    <Content Include="Images\BackGround\workspace-1280538.jpg" />
+    <Content Include="Images\Icons\Account_Black.png" />
+    <Content Include="Images\Icons\Account_White.png" />
+    <Content Include="Images\Icons\add_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" />
+    <Content Include="Images\Icons\add_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" />
+    <Content Include="Images\Icons\DarkMode_Black.png" />
+    <Content Include="Images\Icons\DarkMode_white.png" />
+    <Content Include="Images\Icons\Email_Black.png" />
+    <Content Include="Images\Icons\Email_White.png" />
+    <Content Include="Images\Icons\Eye_White.png" />
+    <Content Include="Images\Icons\HideEye_Black.png" />
+    <Content Include="Images\Icons\HideEye_White.png" />
+    <Content Include="Images\Icons\Home_Black.png" />
+    <Content Include="Images\Icons\Home_White.png" />
+    <Content Include="Images\Icons\Info_Black.png" />
+    <Content Include="Images\Icons\Info_White.png" />
+    <Content Include="Images\Icons\LightMode_Black.png" />
+    <Content Include="Images\Icons\LightMode_White.png" />
+    <Content Include="Images\Icons\Lock_Black.png" />
+    <Content Include="Images\Icons\Lock_White.png" />
+    <Content Include="Images\Icons\manage_accounts_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" />
+    <Content Include="Images\Icons\manage_accounts_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" />
+    <Content Include="Images\Icons\Menu_Black.png" />
+    <Content Include="Images\Icons\Menu_White.png" />
+    <Content Include="Images\Icons\Person_Black.png" />
+    <Content Include="Images\Icons\Person_White.png" />
+    <Content Include="Images\Icons\Phone_Black.png" />
+    <Content Include="Images\Icons\Phone_White.png" />
+    <Content Include="Images\Icons\School_Black.png" />
+    <Content Include="Images\Icons\School_White.png" />
+    <Content Include="Images\Icons\ShowEye_Black.png" />
+    <Content Include="Images\Logo\94031352_01ae62-removebg.png" />
+    <Content Include="Images\Logo\whatsapp_logo_icon_147205.png" />
+    <Content Include="JavaScript\JavaScript.js" />
+    <Content Include="Institute Manage.aspx" />
+    <Content Include="My Page\Courses Managment.aspx" />
+    <Content Include="My Page\Css\style.css" />
+    <Content Include="My Page\DepartMent Managment.aspx" />
+    <Content Include="My Page\Diploma Managment.aspx" />
+    <Content Include="My Page\DisplayCourses.aspx" />
+    <Content Include="My Page\DisplayDepartment.aspx" />
+    <Content Include="My Page\DisplayDiploma.aspx" />
+    <Content Include="My Page\DisplayInstractor.aspx" />
+    <Content Include="My Page\Index.aspx" />
+    <Content Include="My Page\Student Managment.aspx" />
+    <Content Include="My Page\Trainer Managment.aspx" />
+    <Content Include="My Page\User Managment.aspx" />
+    <Content Include="My Page\DisplayStudent.aspx" />
+    <Content Include="User Login.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Index.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComboBox.cs" />
+    <Compile Include="DB.cs" />
+    <Compile Include="My Page\Courses Managment.aspx.cs">
+      <DependentUpon>Courses Managment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Page\Courses Managment.aspx.designer.cs">
+      <DependentUpon>Courses Managment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="My Page\DepartMent Managment.aspx.cs">
+      <DependentUpon>DepartMent Managment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Page\DepartMent Managment.aspx.designer.cs">
+      <DependentUpon>DepartMent Managment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="My Page\Diploma Managment.aspx.cs">
+      <DependentUpon>Diploma Managment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Page\Diploma Managment.aspx.designer.cs">
+      <DependentUpon>Diploma Managment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="My Page\DisplayCourses.aspx.cs">
+      <DependentUpon>DisplayCourses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Page\DisplayCourses.aspx.designer.cs">
+      <DependentUpon>DisplayCourses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="My Page\DisplayDepartment.aspx.cs">
+      <DependentUpon>DisplayDepartment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Page\DisplayDepartment.aspx.designer.cs">
+      <DependentUpon>DisplayDepartment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="My Page\DisplayDiploma.aspx.cs">
+      <DependentUpon>DisplayDiploma.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Page\DisplayDiploma.aspx.designer.cs">
+      <DependentUpon>DisplayDiploma.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="My Page\DisplayInstractor.aspx.cs">
+      <DependentUpon>DisplayInstractor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Page\DisplayInstractor.aspx.designer.cs">
+      <DependentUpon>DisplayInstractor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="My Page\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Page\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="My Page\MyMaserPage.Master.cs">
+      <DependentUpon>MyMaserPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Page\MyMaserPage.Master.designer.cs">
+      <DependentUpon>MyMaserPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="My Page\Student Managment.aspx.cs">
+      <DependentUpon>Student Managment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Page\Student Managment.aspx.designer.cs">
+      <DependentUpon>Student Managment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="My Page\Trainer Managment.aspx.cs">
+      <DependentUpon>Trainer Managment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Page\Trainer Managment.aspx.designer.cs">
+      <DependentUpon>Trainer Managment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="My Page\User Managment.aspx.cs">
+      <DependentUpon>User Managment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Page\User Managment.aspx.designer.cs">
+      <DependentUpon>User Managment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="My Page\DisplayStudent.aspx.cs">
+      <DependentUpon>DisplayStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Page\DisplayStudent.aspx.designer.cs">
+      <DependentUpon>DisplayStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Institute Manage.aspx.cs">
+      <DependentUpon>Institute Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Institute Manage.aspx.designer.cs">
+      <DependentUpon>Institute Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User Login.aspx.cs">
+      <DependentUpon>User Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User Login.aspx.designer.cs">
+      <DependentUpon>User Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="My Page\MyMaserPage.Master" />
+    <Content Include="My Page\ClassDiagram1.cd" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>24401</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44336/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

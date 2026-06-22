@@ -1,0 +1,38 @@
+## Ignore Visual Studio Temporary Files and Build Results
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userhtml
+*.spec
+*.sqlproj.user
+*.userprefs
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPS/
+[Rr]elease/
+[Rr]eleasePS/
+x64/
+x86/
+[Aa]rm/
+[Aa]rm64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio 2015/2017/2019/2022 cache directory
+.vs/
+.vs*/
+
+# NuGet Packages
+*.nupkg
+# The packages folder can be ignored since NuGet packages can be restored
+packages/
+!packages/repositories.config
+
+# Rider/Resharper
+.idea/
+*.sln.iml

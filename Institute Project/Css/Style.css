@@ -1,0 +1,274 @@
+﻿
+body {
+    font-family: system-ui;
+    background-color: #212020;
+}
+a{
+    text-decoration:none;
+    color:white;
+}
+.Content {
+    display: flex;
+    margin: 5px;
+    gap: 20px;
+}
+#NavigationContainer {
+    width: 430px;
+    height: 100vh;
+    transition: 0.5s;
+}
+.Navigation {
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: #212020;
+    border-radius: 5px;
+    width: 350px;
+    height: 100vh;
+    transition: 0.5s;
+    box-shadow: 1px 1px 10px black;
+    /*margin-left:10px;*/
+}
+
+
+/*Start Active Menu*/
+.Navigation.is-active {
+    width: 130px;
+    transition: 0.4s;
+}
+#NavigationContainer.is-active {
+    width: 130px;
+    margin-left: 10px;
+    transition: 0.4s;
+}
+
+
+#Nav.is-active h1 {
+    display: none;
+    transition:0.3s;
+}
+
+#Nav.is-active .NavItems{
+    width: 70px;
+    transition: 0.3s;
+}
+
+#Nav.is-active i {
+    margin-left: 15px;
+    
+}
+#Nav.is-active {
+    margin-top: -70px;
+}
+
+#txtLogo.is-active {
+    display: none;
+    transition-delay:0.9s;
+}
+.Navigation.is-active #ImgLogo {
+    padding-top:60px;
+    padding-left:0px;
+    transition:0.5s;
+    margin-bottom:40px;
+    
+}
+#DropDown.is-active {
+display:none;
+
+}
+.Navigation #Language_ul.is-active ul{
+   
+   position:absolute;
+   left:-70px;
+
+}
+    .Navigation .NavItems.is-active a:hover{
+        transform:scale(0.9);
+    }
+    /*End Active Menu*/
+    .Navigation #MenuBar {
+        position: absolute;
+        right: 7px;
+        top: 7px;
+        color: white;
+        font-size: 40px;
+        cursor: pointer;
+    }
+    .Navigation .Image {
+        margin-bottom: 70px;
+    }
+
+.Navigation .Image #Logo{
+    display:flex;
+}
+
+    
+    .Navigation .Image #Logo #ImgLogo{
+        margin-top:20px;
+        margin-left:10px;
+        height:100px;
+        transition:0.3s;
+        cursor:pointer;
+        
+
+    }
+    .Navigation .Image #Logo #txtLogo {
+        margin-top: 90px;
+        margin-left: 20px;
+        font-size: 35px;
+        font-weight: 900;
+        color:aqua;
+        letter-spacing:2px;
+        transition:0.4s;
+    }
+        
+
+        nav {
+            /*border:2px solid red;*/
+            color: white;
+            margin-left: 30px;
+            /*background-color:red;*/
+        }
+        nav .NavItems {
+            position:relative;
+            
+            margin-bottom: 30px;
+            width: 260px;
+            transition: 0.3s;
+            padding: 0;
+            letter-spacing: 1px;
+            cursor:pointer;
+            
+        }
+
+#Nav .NavItems #DropDown {
+    position: absolute;
+    right:-27px;
+    top:5px;
+    font-size:25px;
+    transition:0.3s;
+}
+#Nav .NavItems:hover #DropDown {
+    transform: rotate(30deg);
+    transition:0.3s;
+    color:black;
+    padding-left:10px;
+    
+
+    
+}
+#Nav .NavItems ul {
+    position: absolute;
+    display: none;
+    bottom: 0;
+    left: 60px;
+    top: 30px;
+    list-style: none;
+    line-height: 0px;
+    transition: 0.5s;
+    z-index: 100;
+    letter-spacing:2px;
+
+}
+
+
+#Nav .NavItems:hover ul {
+    display: block;
+    transition: 0.4s;
+}
+#Nav .NavItems ul a {
+   
+    padding:20px;
+   
+}
+
+a{
+    display:flex;
+}
+nav .NavItems a:hover, #Active {
+ background-color: aqua;
+ border-radius: 10px;
+ color: black;
+ transition:0.3s;
+}
+    nav .NavItems i{
+        
+        height:50px;
+        margin:15px 30px 0 30px;
+        font-size:35px;
+        
+    }
+nav .NavItems h1 {
+font-size: 27px;
+transition:0.1s;
+}
+
+#login {
+    margin:140px 0 0 0;
+}
+/*End Navigation Bar*/
+/*Start HomeContent*/
+.ManiContent {
+    background-color: #212020;
+    width: 100%;
+    padding: 0px;
+    box-shadow: -5px 1px 10px black;
+}
+.ImgContainer {
+    position: relative;
+    background-image: url("../Images/BackGround/library-922998.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    border-radius: 5px;
+    overflow: hidden;
+   
+}
+#Overflow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #0000004c;
+}
+.Text{
+    position:relative;
+    top:40%;
+    left:23%;
+    color:white;
+    letter-spacing:2px;
+    font-size:30px;
+}
+.Text::after{
+    position:absolute;
+    content:'';
+    left:-10px;
+    top:0;
+    background:red;
+    height:100%;
+    width:7px;
+    
+}
+.Text span{
+    color:aqua;
+}
+.Text b{
+    font-size:60px;
+    height:70px;
+   
+}
+/*#ImgHome {
+    background: red;
+    width: 100%;
+    height: 700px;
+    background-position:center;
+}*/
+/*End HomeContent*/
+
+/*-------------------------------------- End Index Page----------------------------------*/
+
+/*-------------------------------------- Start User Login Page----------------------------------*/
+
+
+/*-------------------------------------- End User Login Page----------------------------------*/

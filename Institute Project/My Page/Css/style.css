@@ -1,0 +1,372 @@
+﻿body {
+    font-family: system-ui;
+    direction: rtl;
+    padding: 0;
+    margin: 0;
+}
+
+
+header #headerContent {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+    background: #235347;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px black;
+    z-index: 2;
+    color:white;
+}
+header #headerContent #Logo{
+    height:250px;
+}
+header #headerContent #boxLogo{
+    margin-top:-20px;
+}
+
+/* start SidBar*/
+
+#containerSidBard {
+    display:flex;
+    gap:5px;
+   
+}
+#Navigation {
+    position: relative;
+    width: 300px;
+    height: 100%;
+    padding-top: 140px;
+    box-shadow: 1px 1px 10px black;
+    background-color: #354049;
+
+}
+
+#Navigation Nav {
+   
+    border-radius: 5px;
+    width: 300px;
+    transition: 0.5s;
+    padding-bottom:75px;
+    margin-right:0px;
+}
+a {
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+    
+    
+}
+
+#Navigation #MenuBar {
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    
+}
+
+nav .NavItems {
+    width: 300px;
+    transition: 0.3s;
+    letter-spacing: 1px;
+    margin-bottom:43.5px;
+
+
+}
+
+        nav .NavItems a:hover, #Active {
+            background-color: #235347;
+            border-radius: 10px;
+            color: black;
+            transition: 0.3s;
+        }
+
+        nav .NavItems i {
+            height: 50px;
+            font-size: 30px;
+            margin-left:10px;
+        }
+
+       
+
+
+/* End SidBar*/
+
+.Navigation nav.is-active {
+    width: 130px;
+    transition: 0.4s;
+}
+
+#NavigationContainer.is-active {
+    width: 130px;
+    margin-left: 10px;
+    transition: 0.4s;
+}
+
+
+#Nav.is-active .Labels {
+    display: none;
+    transition: 0.3s;
+}
+
+#Nav.is-active .NavItems {
+    width: 70px;
+    transition: 0.3s;
+}
+
+#Nav.is-active i {
+    margin-left: 15px;
+}
+
+#Nav.is-active {
+    margin-top: -70px;
+}
+
+
+/* My Master Page*/
+#Main {
+    position: relative;
+    width: 100%;
+    height: 780px;
+    background-color: #354049;
+    border-radius: 5px;
+    /*    background-image: url('../../Images/BackGround/library-922998.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;*/
+    padding: 5px;
+}
+/*#Main #smOverlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background-color:rgba(0 ,0 ,0 ,0.4);
+
+}*/
+    #Main h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        color: #05f919;
+        box-shadow: 1px 1px 10px black;
+        padding-bottom:10px;
+        margin-top: -5px;
+    }
+/*----------------End My Master Page----------------------------------*/
+
+/* Start Student Managment*/
+/*ستبدا الكلاسات وال Id  ب  (sm) */
+
+#smContainer{
+
+}
+#smContainer h1{
+  
+}
+#smContainer #smContent{
+    display:flex;
+    gap:60px
+}
+    #smContainer #smContent #smMainText {
+       
+    }
+    #smContainer #smContent .smInfoBox {
+        width: 76%;
+        display: flex;
+        gap: 60px;
+        border-radius: 30px;
+        height: 600px;
+        padding: 30px;
+        background-color: #354049;
+    }
+
+
+#smContainer #smContent .smInfoBox .smMainContent {
+    width:100%;
+}
+.Labelss{
+    width:200px;
+    background-color:azure;
+    border-radius:10px;
+    text-align:center;
+    color:black;
+    
+}
+.TextBoxes {
+    border-radius: 10px;
+    background-color: azure;
+    font-size: 20px;
+    color:black;
+}
+
+#smContainer #smContent .smInfoBox .smBox {
+    width: 600px;
+    height: 50px;
+    gap: 30px;
+    margin-bottom: 30px;
+    padding:10px;
+    display: flex;
+    border-radius:10px;
+    background-color:#354049;
+    box-shadow:1px 1px 10px black;
+}
+
+#smContainer #smContent .ButtonsBox {
+    border-radius: 30px;
+    background-color: #354049;
+    box-shadow: 1px 1px 10px black;
+    width: 220px;
+    height: 600px;
+    padding: 30px;
+}
+    .ButtonsBox .st_buttonsBox {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 200px;
+        height: 70px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        padding:10px;
+        border-radius: 10px;
+        background-color:white;
+        transition:0.3s;
+        cursor:pointer;
+    }
+        .ButtonsBox .st_buttonsBox:hover {
+            background-color: #235347;
+            color: white;
+            transition: 0.3s;
+        }
+        .ButtonsBox .st_buttonsBox i {
+            color: black;
+            font-size: 40px;
+        }
+            .ButtonsBox .st_buttonsBox:hover{
+                color:white;
+            }
+
+            .ButtonsBox .st_buttonsBox .Buttons {
+                font-size: 30px;
+                font-weight: bold;
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+            }
+            .ButtonsBox .st_buttonsBox .Buttons:hover{
+                color:white;
+            }
+
+            #Display {
+                direction: ltr;
+                display: flex;
+                flex-direction:column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+                #Display .SearchBox {
+                    position: relative;
+                    padding-bottom: 20px;
+                    height: 40px;
+                    background-color: #235347;
+                    display: flex;
+                }
+
+                #Display .TextBoxSearch {
+                    width: 400px;
+                    height: 40px;
+                    border-radius: 10px;
+                    direction: rtl;
+                    font-size: 20px;
+                }
+
+                #Display .SearchBox i {
+                    position: absolute;
+                    top: 15px;
+                    left: 21%;
+                }
+
+                #Display .SearchBox .btnSearch {
+                    height: 45px;
+                    width: 100px;
+                    border-radius: 10px;
+                    background-color: #05f919;
+                    font-size: 20px;
+                    cursor: pointer;
+                }
+
+                #Display #DisplayStudent {
+                    margin-top: 100px;
+                    width: 900px;
+                    height: 900px;
+                }
+
+
+
+
+
+    .Deletebtn{
+        border-radius:20px;
+        background-color:red;
+        padding:10px;
+        color:white;
+        border:none;
+        cursor:pointer;
+        letter-spacing:2px;
+        
+        
+
+    }
+.Addbtn {
+    border-radius: 20px;
+    background-color: #235347;
+    padding: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    letter-spacing:2px;
+    margin-right:10px;
+    margin-left:10px;
+}
+.Updatebtn {
+    border-radius: 20px;
+    background-color: #7ef107;
+    padding: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 2px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+
+.btnBack{
+    margin-right:45%;
+    margin-top:20px;
+    padding:15px;
+    border-radius:10px;
+    background-color:red;
+    color:white;
+    font-weight:bold;
+    font-size:20px;
+    cursor:pointer;
+}
+
+
+/* ---------------End Student Managment------------------------------*/
+
+
+
+
+/* Start Trainer Managment*/
+
+/* ---------------End Trainer Managment------------------------------*/
+

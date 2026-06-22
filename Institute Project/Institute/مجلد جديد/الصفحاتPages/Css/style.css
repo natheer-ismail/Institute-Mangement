@@ -1,0 +1,142 @@
+﻿body {
+    font-family: system-ui;
+    direction: rtl;
+    padding: 0;
+    margin: 0;
+    background-color: #ccc;
+}
+
+
+header #headerContent {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+    background: #235347;
+    border-radius: 4px;
+    box-shadow: 1px 1px 10px #8a8585;
+    z-index: 2;
+}
+header #headerContent #Logo{
+    height:250px;
+}
+header #headerContent #boxLogo{
+    margin-top:-20px;
+}
+
+/* start SidBar*/
+
+#containerSidBard {
+    display:flex;
+    gap:10px;
+   
+}
+#Navigation {
+    position: relative;
+    width: 300px;
+    height: 100%;
+    padding-top: 140px;
+    box-shadow: 1px 1px 10px black;
+    background-color: #163832;
+
+}
+
+#Navigation Nav {
+   
+    border-radius: 5px;
+    width: 300px;
+    transition: 0.5s;
+    padding-bottom:75px;
+    margin-right:0px;
+}
+a {
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+    
+    
+}
+
+#Navigation #MenuBar {
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    
+}
+
+nav .NavItems {
+    width: 300px;
+    transition: 0.3s;
+    letter-spacing: 1px;
+    margin-bottom:43.5px;
+
+
+}
+
+        nav .NavItems a:hover, #Active {
+            background-color: aqua;
+            border-radius: 10px;
+            color: black;
+            transition: 0.3s;
+        }
+
+        nav .NavItems i {
+            height: 50px;
+            font-size: 30px;
+            margin-left:10px;
+        }
+
+       
+
+
+/* End SidBar*/
+
+.Navigation nav.is-active {
+    width: 130px;
+    transition: 0.4s;
+}
+
+#NavigationContainer.is-active {
+    width: 130px;
+    margin-left: 10px;
+    transition: 0.4s;
+}
+
+
+#Nav.is-active .Labels {
+    display: none;
+    transition: 0.3s;
+}
+
+#Nav.is-active .NavItems {
+    width: 70px;
+    transition: 0.3s;
+}
+
+#Nav.is-active i {
+    margin-left: 15px;
+}
+
+#Nav.is-active {
+    margin-top: -70px;
+}
+
+
+/*Main*/
+#Main {
+    width: 100%;
+    margin-top:5px;
+    height: 780px;
+    background-color: #DAF1DE;
+    border-radius:5px;
+    
+}
+
+#mmm{
+    background-color:black;
+    color:wheat;
+    margin-top:100px;
+}
